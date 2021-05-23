@@ -1,0 +1,47 @@
+{
+    "ciudad_este": "bosque",
+    "exp_este": "30",
+
+    "nombre": "Pueblo inicio",
+
+    "miniatura": "ciudad_inicio",
+
+    "niveles": [
+       {
+            "nombre": "Tutorial",
+            "id": "tutorial",
+            "experiencia": "0",
+            "descripcion": "Aprende a jugar.",
+            "lenguajes": ["Java","C"]
+       },
+       {
+            "nombre": "Interludio I",
+            "id": "interludio1",
+            "experiencia": "5",
+            "descripcion": "Aprende cómo funciona Java.",
+            "lenguajes": ["Java"]
+       },
+       {
+            "nombre": "Herrería",
+            "id": "herreria",
+            "experiencia": "10",
+            "descripcion": "Ayuda al herrero a fabricar una espada. \nAprende qué puede hacer Ada.",
+            "lenguajes": ["Java"]
+       },
+       {
+            "nombre": "Terremoto",
+            "id": "terremoto",
+            "experiencia": "20",
+            "descripcion": "¡Ha habido un terremoto! Visita el pueblo y comprueba que todo el mundo está bien.\nAprende a usar las estructuras de control.",
+            "lenguajes": ["Java"]
+       },
+       {
+            "nombre": "Interludio II",
+            "id": "interludio2",
+            "experiencia": "25",
+            "descripcion": "Aprende las variables.",
+            "lenguajes": ["Java"]
+       }
+    ]
+
+}

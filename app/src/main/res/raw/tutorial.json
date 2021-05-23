@@ -1,0 +1,128 @@
+[
+    {
+        "teclas": [
+            {
+                "teclado": "1",
+                "teclas": ["12"]
+            }
+        ],
+        "fondo": "fondo_torre",
+        "mensajes": [
+            {
+                "imagen": "monjehablar",
+                "posicion": "derecha",
+                "texto": "¡Hola, mundo!",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Bienvenido a Turing. En este videojuego aprenderás programación mientras juegas.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Y es que este universo sigue las reglas de la programación.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Para jugar no controlas cada paso de tu personaje, sino que programas su comportamiento antes de cada nivel y dejas que se desenvuelva por sí mismo.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "",
+                "siguiente": "true"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Esta es Ada, la protagonista de nuestra historia. Tú serás su programador.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Vamos allá...",
+                "siguiente": "true"
+            }
+        ],
+        "avatar": "monje_mini",
+        "resumen": "¿Eres capaz de escribir unas líneas de código que lleven a Ada a la meta?",
+        "objetivo": "Objetivo: Llega a la baldosa de color rojo.",
+        "secundario": "",
+        "victoria": "meta",
+        "lineas": [ ["401" , "303"], ["401"], ["0"] ],
+        "obligatorio": [ ["401"] ],
+        "posicion_inicial": "1",
+        "entrada": "",
+        "salida": "",
+        "mapa": {
+            "filas": "2",
+            "columnas": "3",
+            "baldosaBase": "baldosa_hierba",
+            "item": [
+                {
+                    "posicion": "2",
+                    "direccion": "abajo",
+                    "tipo": "meta",
+                    "bitmap": "sprite_meta"
+                },
+                {
+                    "posicion": "3",
+                    "direccion": "derecha",
+                    "tipo": "ada",
+                    "bitmap": "sprite_ada"
+                }
+            ]
+        },
+        "ayuda": [ "interfaz", "teclado" ]
+    },
+    {
+        "dialogo": "true",
+        "fondo": "fondo_torre",
+
+        "mensajes": [
+            {
+                "imagen": "monjehablar",
+                 "posicion": "derecha",
+                 "texto": "¡Bueno!",
+                "siguiente": "false"
+            },
+            {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "¿Has pillado la dinámica? Primero piensas qué quieres que haga Ada, luego lo programas escribiendo líneas de código y por último compruebas si lo has hecho bien.",
+                 "siguiente": "false"
+            },
+            {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Así es como se programa: primero se piensa, después se escribe y por último se corrige. Tienes que tenerlo muy en cuenta mientras juegas.",
+                 "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Según superes niveles, se irán añadiendo páginas a tu libro de apuntes."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Ahora mismo se están escribiendo las páginas sobre el teclado. Puedes ojearlo si olvidas algo."
+            },
+            {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "¡Buena suerte! :)",
+                 "siguiente": "true"
+            }
+        ],
+
+        "experiencia": "5"
+    }
+]

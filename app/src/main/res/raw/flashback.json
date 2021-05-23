@@ -1,0 +1,66 @@
+[    {
+         "dialogo": "true",
+         "fondo": "fondo_bosque",
+         "mensajes": [
+             {
+                 "imagen": "boolehablar",
+                 "posicion": "derecha",
+                 "texto": "Me llamo Boole. Vengo de la capital, muy lejos en el norte."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Hace un par de semanas, el código de nuestra tierra se rompió."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Es algo que ocurre cada cientos de años. Hay un error en el código de nuestro mundo, un fallo en el sistema que provocar una reacción muy violenta en el mundo que vemos."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Primero hubo un terremoto muy muy fuerte. Destrozó la ciudad y mató a cientos de personas."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Pero eso no fue lo peor. Por todas partes empezaron a aparecer fallos de código, formas borrosas y extrañas. Según los eruditos de mi tierra, se llaman excepciones."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Son fallos no controlados, que destruyen todo a lo que se acercan."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "El rey lanzó un equipo de búsqueda, en el que yo participé, y encontramos la fuente de los errores. Al este de la capital hay una zona de código mal estructurado, que creemos fue la causa del terremoto y las exceptiones."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Pero no podemos acceder a ella. Cuanto más nos acercamos, más excepciones aparecen."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Por eso estoy aquí. Busco una forma de acabar con ellas para poder arreglar la zona."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "En este bosque hay una torre, y en la torre vive un monje que conoce todos los secretos de la programación."
+             },
+             {
+                 "imagen": "0",
+                 "posicion": "derecha",
+                 "texto": "Si alguien puede acabar con las excepciones, es él.",
+                 "siguiente": "true"
+             }
+         ],
+
+         "experiencia":"5",
+         "ayuda_extra": ["excepciones"]
+     }
+ ]

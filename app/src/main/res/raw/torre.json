@@ -1,0 +1,165 @@
+[
+    {
+        "dialogo":"true",
+        "fondo": "fondo_torre",
+        "mensajes": [
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "La torre es imponente..."
+            },
+            {
+                "imagen": "boolehablar",
+                "posicion": "derecha",
+                "texto": "Sí..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Hay un monje en la puerta."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿Es él al que buscas?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Supongo. No creo que viva nadie más aquí."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Déjame hablar a mí...",
+                "siguiente": "true"
+            }
+        ]
+    },
+    {
+        "fondo": "fondo_torre",
+        "mensajes": [
+            {
+                "imagen": "boolehablar",
+                "posicion": "derecha",
+                "texto": "Venimos en busca de su ayuda. Hay excepciones por todos lados y no tenemos forma de eliminarlas.",
+                "siguiente":"false"
+            },
+            {
+                "imagen": "monjehablar",
+                "posicion": "izquierda",
+                "texto": "Sabía que tarde o temprano alguien vendría a preguntar."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Tengo lo que buscas."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Si alguien mira fijamente a una excepción desaparece, ¿verdad?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Eso es porque la excepción rompe su código interno."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Lo que teneis que hacer es introducir la excepción en un bloque try-catch."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Así, cuando mireis la excepción ésta será capturada y no sufriréis daño."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Pero tened cuidado! Si la tocáis, no habrá nada que pueda salvaros...",
+                "siguiente": "true"
+            }
+        ],
+        "teclas": [
+            {
+                "teclado": "1",
+                "teclas": ["5","10"]
+            }
+        ],
+
+        "avatar": "boole_mini",
+        "resumen": "Vamos a probar si esto es capaz de capturar a la excepción.",
+        "objetivo": "Objetivo: Llega a la meta.",
+        "secundario": "Usa try-catch",
+        "lineas": [ ["0"], ["520"], ["1","403"],["1","401"], ["599","570"], ["521"], ["0"], ["599","571"], ["0"] ],
+        "victoria": "meta",
+        "mapa": {
+             "filas": "3",
+             "columnas": "4",
+             "baldosaBase": "baldosa_hierba",
+
+             "item": [
+                 {
+                     "posicion":"2",
+                     "tipo":"fijo",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "posicion":"10",
+                     "tipo":"fijo",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "posicion":"6",
+                     "tipo":"excepcion",
+                     "bitmap":"sprite_excepcion"
+                 },
+                 {
+                     "posicion":"7",
+                     "tipo":"meta",
+                     "bitmap":"sprite_meta"
+                 },
+                 {
+                     "posicion": "4",
+                     "direccion": "derecha",
+                     "tipo": "ada",
+                     "bitmap": "sprite_ada"
+                 }
+             ]
+         },
+         "ayuda":["trycatch"]
+    },
+    {
+        "dialogo": "true",
+        "fondo": "fondo_torre",
+        "mensajes": [
+            {   "imagen": "boolehablar",
+                "posicion": "derecha",
+                "texto": "¡Funciona!"
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¡Sí! ¿Con esto podrás cumplir tu misión?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Creo que sí. Ahora tengo que partir y volver a casa."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Gracias, Ada."
+            }
+        ],
+
+        "experiencia":"10"
+    }
+]

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="8%p"
+    >
+
+    <Row android:keyWidth="25%p">
+        <Key android:codes="-3"   android:keyIcon="@drawable/tecla_ocultar" android:keyEdgeFlags="left" />
+        <Key android:codes="-10"    android:keyLabel="ACCION" />
+        <Key android:codes="-11"    android:keyLabel="BUCLE" />
+        <Key android:codes="-12"    android:keyLabel="COND" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="501" android:keyLabel="if" android:keyWidth="27%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="502" android:keyLabel="else if" android:keyWidth="26%p"  />
+        <Key android:codes="503" android:keyLabel="else" android:keyWidth="27%p" />
+        <Key android:codes="998" android:keyLabel="VAR" android:keyEdgeFlags="right" />
+    </Row>
+
+    <Row>
+        <Key android:codes="504" android:keyLabel="while" android:keyWidth="27%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="505"  android:keyLabel="do" android:keyWidth="26%p" />
+        <Key android:codes="506"  android:keyLabel="for" android:keyWidth="27%p"/>
+        <Key android:codes="-5"   android:keyIcon="@drawable/tecla_borrar" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="508" android:keyLabel="switch" android:keyWidth="27%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="509" android:keyLabel="case" android:keyWidth="26%p" />
+        <Key android:codes="510" android:keyLabel="break" android:keyWidth="27%p" />
+        <Key android:codes="-1" android:keyIcon="@drawable/tecla_enter" android:isRepeatable="true" android:keyHeight="16%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="599" android:keyLabel="}" android:keyWidth="8%p" android:keyEdgeFlags="left"/>
+    </Row>
+
+</Keyboard>

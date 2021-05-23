@@ -1,0 +1,566 @@
+[
+    {
+        "fondo": "fondo_pueblo",
+        "mensajes": [
+            {
+                "imagen": "herrero",
+                "posicion": "derecha",
+                "texto": "Qué fuerte ha sido. Deberíamos ir a la plaza."
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¡Mira! Hay rocas bloqueando el camino."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Creo que hay rocas. No estoy segura. Puede que podamos pasar sin romper nada."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Yo tampoco lo veo bien. Tendremos que decidirlo sobre la marcha."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Vamos a pasar. Si hay una roca yo me encargaré de romperla."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "¿Puedes hacerlo?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Sin problemas!",
+                "siguiente": "true"
+            }
+        ],
+
+        "teclas": [
+            {
+                "teclado": "2",
+                "teclas": ["4", "16"]
+            },
+            {
+                "teclado": "3",
+                "teclas": ["9", "19", "20"]
+            }
+        ],
+
+        "avatar": "herrero_mini",
+        "resumen": "Tenemos que cruzar. Si hay una roca en el camino hay que romperla.",
+        "objetivo": "Objetivo: Cruza el puente.",
+        "secundario": "Usa if.",
+        "obligatorio": [ ["501"] ],
+        "lineas": [ ["401"], ["501" , "403", "304", "601", "322"],["1"],["599","551"]],
+        "posicion_inicial": "0",
+        "victoria": "meta",
+
+        "mapa": {
+             "filas": "6",
+             "columnas": "5",
+             "baldosaBase": "baldosa_hierba",
+             "baldosaSuelo": [
+                {
+                    "posicion": "5",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "8",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "9",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "10",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "13",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "14",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "15",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "18",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "19",
+                    "bitmap": "baldosa_agua"
+                },
+                {
+                    "posicion": "6",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "7",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "11",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "12",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "16",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "17",
+                    "bitmap": "baldosa_madera"
+                }
+
+             ],
+
+             "item": [
+                 {
+                     "posicion":"21",
+                     "tipo":"ada",
+                     "bitmap":"sprite_ada",
+                     "direccion": "arriba"
+                 },
+                 {
+                     "aleatorio": "true",
+                     "posicion":["11","12"],
+                     "tipo":"roca",
+                     "salud":"1",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo"
+                 },
+                 {
+                    "posicion":"1",
+                    "tipo":"meta",
+                    "bitmap":"sprite_meta"
+                 },
+                 {
+                    "posicion":"2",
+                    "tipo":"meta",
+                    "bitmap":"sprite_meta"
+                 }
+             ]
+         },
+
+         "constantes": "4",
+
+        "ayuda": [ "azar", "if", "condicion" ]
+    },
+    {
+        "fondo": "fondo_pueblo",
+        "dialogo": "true",
+        "mensajes": [
+            {
+                "imagen": "mujerhablar",
+                "posicion": "izquierda",
+                "texto": "..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Casi se nos cae el techo encima. Pudimos salir por los pelos."
+            },
+            {
+                "imagen": "herrero",
+                "posicion": "derecha",
+                "texto": "¿Ha habido algún herido?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Ninguno que sepamos."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "No veo a Alan. ¿Está bien?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "No está en el pueblo. Ayer salió a visitar a un pariente."
+            }
+        ]
+    },
+    {
+        "fondo": "fondo_pueblo",
+        "mensajes":[
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "Menos mal, parece que todo el mundo está bien."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Mmm... Hay dos rocas en la puerta de la posada."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Voy a despejar la entrada mientras estos charlan."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Seguro que puedo romper una de las dos rocas...",
+                "siguiente": "true"
+            }
+        ],
+
+        "teclas": [
+            {
+                "teclado": "2",
+                "teclas": ["5", "6"]
+            }
+        ],
+        "avatar": "ada_mini",
+        "resumen": "¡Voy a abrir una entrada!",
+        "objetivo": "Objetivo: Rompe una de esas rocas y llega a la meta.",
+        "secundario": "Usa if y else.",
+        "victoria": "meta",
+        "lineas": [ ["0"], ["501"],["1","404", "302"],["1","401","302"],["1"],["599","551"],["503"],["1","404","304"],["1","401","304"],["1"],["599","553"]],
+        "obligatorio": [ ["501"] ],
+        "posicion_inicial": "0",
+        "mapa": {
+            "filas": "5",
+            "columnas": "6",
+            "baldosaBase": "baldosa_hierba",
+            "baldosaSuelo":[
+                {
+                    "posicion": "0",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "1",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "2",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "3",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "4",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "5",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "6",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "7",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "8",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "9",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "10",
+                    "bitmap": "baldosa_madera"
+                },
+                {
+                    "posicion": "11",
+                    "bitmap": "baldosa_madera"
+                }
+            ],
+            "item": [
+                {
+                    "aleatorio": "true",
+                    "posicion": ["9","14"],
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "aleatorio": "true",
+                    "posicion": ["9","14"],
+                    "direccion": "abajo",
+                    "tipo": "diana",
+                    "salud": "1",
+                    "ID": "escombros",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "posicion": "2",
+                    "direccion": "abajo",
+                    "tipo": "meta",
+                    "bitmap": "sprite_meta"
+                },
+                {
+                    "posicion": "3",
+                    "direccion": "abajo",
+                    "tipo": "meta",
+                    "bitmap": "sprite_meta"
+                },
+                {
+                    "posicion": "6",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "7",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "10",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "11",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "27",
+                    "direccion": "arriba",
+                    "tipo": "ada",
+                    "bitmap": "sprite_ada"
+                }
+            ]
+        },
+        "ayuda": [ "if_2"]
+    },
+    {
+        "fondo": "fondo_pueblo",
+        "dialogo": "true",
+        "mensajes": [
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¡Listo!"
+            },
+            {
+                "imagen": "imagen_vacio",
+                "posicion": "derecha",
+                "texto": "..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿Qué ha sido eso?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Hay alguien en la posada!",
+                "siguiente": "true"
+            }
+        ]
+    },
+    {
+        "fondo": "fondo_posada",
+        "mensajes": [
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "Uf... Que mal ha resistido el terremoto esta parte."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿Hola? ¿Hay alguien?"
+            },
+            {
+                "imagen": "perroladrar",
+                "posicion": "derecha",
+                "texto": "Grrr. Guau."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Es un perro!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "¡GUAU!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Sigue ladrando. A ver si puedo encontrarte y sacarte de aquí...",
+                "siguiente": "true"
+            }
+        ],
+
+
+        "teclas": [
+            {
+                "teclado": "1",
+                "teclas": ["14"]
+            }
+        ],
+        "avatar": "ada_mini",
+        "resumen": "Tengo que salvar al perrito.",
+        "objetivo": "Objetivo: Rompe la roca que bloquea la salida al perro..",
+        "victoria": "meta",
+        "lineas": [ ["0"], ["501","408","601", "997", "1"],["1"],["599","551"],["502"],["1"],["599","552"],["503"],["1"],["599","553"]],
+        "obligatorio": [ ["501"] ],
+        "posicion_inicial": "0",
+        "extra": "posada",
+        "mapa": {
+            "filas": "7",
+            "columnas": "5",
+            "baldosaBase": "baldosa_madera",
+            "item": [
+                {
+                    "aleatorio": "true",
+                    "posicion": ["6","16","31"],
+                    "direccion": "derecha",
+                    "tipo": "NPC",
+                    "ID": "perro",
+                    "bitmap": "sprite_perro"
+                },
+                {
+                    "posicion": "0",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "1",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "2",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "3",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "4",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "7",
+                    "tipo": "roca",
+                    "salud": "1",
+                    "ID": "escombros",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "posicion": "17",
+                    "tipo": "roca",
+                    "salud": "1",
+                    "ID": "escombros",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "posicion": "32",
+                    "tipo": "roca",
+                    "salud": "1",
+                    "ID": "escombros",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "posicion": "13",
+                    "tipo": "roca",
+                    "salud": "1",
+                    "ID": "escombros",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "posicion": "33",
+                    "tipo": "roca",
+                    "salud": "1",
+                    "ID": "escombros",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "posicion": "23",
+                    "tipo": "roca",
+                    "salud": "1",
+                    "ID": "escombros",
+                    "bitmap": "sprite_roca"
+                },
+                {
+                    "posicion": "10",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "11",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "11",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_vertical"
+                },
+                {
+                    "posicion": "20",
+                    "direccion": "abajo",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "21",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_horizontal"
+                },
+                {
+                    "posicion": "21",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_vertical"
+                },
+                {
+                    "posicion": "26",
+                    "tipo": "fijo",
+                    "bitmap": "sprite_pared_madera_vertical"
+                },
+                {
+                    "posicion": "24",
+                    "direccion": "izquierda",
+                    "tipo": "ada",
+                    "bitmap": "sprite_ada"
+                }
+            ]
+        },
+        "ayuda": [ "escuchar", "nota_2"],
+        "experiencia": "5"
+    }
+]

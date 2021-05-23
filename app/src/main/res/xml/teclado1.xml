@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="8%p" >
+
+    <Row android:keyWidth="25%p">
+        <Key android:codes="-3"   android:keyIcon="@drawable/tecla_ocultar" android:keyEdgeFlags="left" />
+        <Key android:codes="-10"    android:keyLabel="ACCION" />
+        <Key android:codes="-11"    android:keyLabel="BUCLE" />
+        <Key android:codes="-12"    android:keyLabel="COND" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="304" android:keyIcon="@drawable/flecha_arriba" android:horizontalGap="20%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="520" android:keyLabel="Try" android:horizontalGap="20%p"/>
+        <Key android:codes="998" android:keyLabel="VAR" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="302" android:keyIcon="@drawable/flecha_izquierda" android:keyEdgeFlags="left"/>
+        <Key android:codes="301"  android:keyIcon="@drawable/flecha_abajo"/>
+        <Key android:codes="303"  android:keyIcon="@drawable/flecha_derecha"/>
+        <Key android:codes="521"  android:keyLabel="Catch"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/tecla_borrar" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="401" android:keyLabel="andar" android:keyEdgeFlags="left"/>
+        <Key android:codes="403" android:keyLabel="mirar"/>
+        <Key android:codes="408" android:keyLabel="oir"/>
+        <Key android:codes="402" android:keyLabel="hablar"/>
+        <Key android:codes="-1" android:keyIcon="@drawable/tecla_enter" android:isRepeatable="true" android:keyHeight="16%p" android:isModifier="true" android:keyEdgeFlags="right"/>
+
+    </Row>
+
+    <Row>
+        <Key android:codes="404" android:keyLabel="golpear" android:keyEdgeFlags="left"/>
+        <Key android:codes="405" android:keyLabel="desc."/>
+        <Key android:codes="406" android:keyLabel="coger"/>
+        <Key android:codes="407" android:keyLabel="usar"/>
+    </Row>
+
+</Keyboard>

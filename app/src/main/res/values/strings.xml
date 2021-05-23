@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">TFG</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_crear_codigo">Crear Codigo</string>
+    <string name="title_activity_resolver_codigo">ResolverCodigo</string>
+    <string name="title_activity_intro">Intro</string>
+    <string name="title_activity_resumen_mision">ResumenMision</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="title_activity_apuntes">Apuntes</string>
+    <string name="title_activity_bienvenida">TFG</string>
+    <string name="descr_avatar">Avatar del PNJ</string>
+    <string name="descr_descripcion">Aquí es donde se muestra la descripción de la misión.</string>
+    <string name="descr_retoPrimario">Principal objetivo a cumplir.</string>
+    <string name="descr_retoSecundario">Segundo objetivo a cumplir.</string>
+    <string name="boton_mision">Ir a la mision</string>
+    <string name="descr_fondo">Fondo del nivel</string>
+    <string name="descr_persDcha">Persona a la derecha</string>
+    <string name="descr_persIzq">Persona a la izquierda</string>
+    <string name="descr_boton_derecha">Pasar a la derecha</string>
+    <string name="descr_boton_izquierda">Pasar a la izquierda</string>
+    <string name="descr_nueva_mision">Esta mision es nueva</string>
+    <string name="descr_miniatura">Miniatura de la ciudad</string>
+    <string name="descr_opciones">Opciones</string>
+    <string name="descr_apuntes">Apuntes</string>
+    <string name="boton_saltar">Saltar</string>
+    <string name="boton_siguiente">Siguiente…</string>
+    <string name="boton_enviar">Enviar código</string>
+    <string name="boton_indice">Ir a…</string>
+    <string name="titulo">Titulo</string>
+    <string name="mensaje_ayuda">Texto de ayuda.</string>
+    <string name="mas">+</string>
+    <string name="aviso_mensaje">Salir ahora hará que pierdas todo tu progreso. ¿Estás seguro?</string>
+    <string name="aviso_titulo">Salir al mapa</string>
+    <string name="descr_nuevo">Este apunte es nuevo</string>
+    <string name="descr_flecha">Indicador</string>
+    <string name="boton_ir_mision">Desde el principio</string>
+    <string name="boton_ir_ultimo">Ultimo visitado</string>
+    <string name="info_inicial">Información sobre el nivel</string>
+    <string name="boton_salir">Salir al mapa</string>
+    <string name="boton_reinicio">Reiniciar</string>
+    <string name="aviso_reinicio">¿Está seguro? Perderá todo el progreso.</string>
+    <string name="aviso_reinicio_titulo">REINICIAR JUEGO</string>
+    <string name="boton_lenguajes">Lenguajes</string>
+    <string name="aviso_lenguaje">¿Está seguro? Cambiar el lenguaje reiniciará el juego.</string>
+    <string name="aviso_lenguaje_titulo">CAMBIAR LENGUAJE</string>
+
+    <string-array name="lenguajes">
+        <item>Java</item>
+        <item>C</item>
+    </string-array>
+
+    <string name="cabecera_Java">public class Turing {
+        \n\n\tpublic static void main(String[] args){
+        \n\n\t\tPersona ada = new Persona();</string>
+    <string name="pie_Java">\t}\n}</string>
+    <string name="cabecera_C">int main (int argc, char* argv[]){ </string>
+    <string name="pie_C">}</string>
+    <string name="ayuda_interfaz_titulo_Java">Teclado I</string>
+    <string name="ayuda_interfaz_Java">
+<![CDATA[
+    <p>Ahora mismo estás en la actividad para escribir código. Aquí es donde tienes que programar lo que hará Ada en el nivel, usando el teclado.</p>
+    <p>En él hay teclas con muchas de las acciones que puede hacer Ada: andar, mirar, golpear, etc. (Se irán desbloqueando mientras juegas).</p>
+    <p>También tiene teclas para escribir cosas propias de la programación, como bucles, variables o condiciones.</p>
+    <p>Si quieres que Ada de un paso hacia adelante, pulsa la tecla <em>Andar</em>, y en la pantalla se escribirá el codigo que hace que Ada ande. En este caso es:</p>
+    <font color=\"#B40404\"><em>ada.andar( );</em></font>
+    <p>Recuerda: debes escribir cada orden en una línea distinta.</p>
+    <p>Pulsa <img src=\"boton_ayuda\"/> si quieres volver a ver esta ayuda.</p>
+    ]]>
+    </string>
+    <string name="ayuda_interfaz_titulo_C">Teclado I</string>
+    <string name="ayuda_interfaz_C">
+<![CDATA[
+    <p>Ahora mismo estás en la actividad para escribir código. Aquí es donde tienes que programar lo que hará Ada en el nivel, usando el teclado.</p>
+    <p>En él hay teclas con muchas de las acciones que puede hacer Ada: andar, mirar, golpear, etc. (Se irán desbloqueando mientras juegas).</p>
+    <p>También tiene teclas para escribir cosas propias de la programación, como bucles, variables o condiciones.</p>
+    <p>Si quieres que Ada de un paso hacia adelante, pulsa la tecla <em>Andar</em>, y en la pantalla se escribirá el codigo que hace que Ada ande. En este caso es:</p>
+    <font color=\"#B40404\"><em>andar( );</em></font>
+    <p>Recuerda: debes escribir cada orden en una línea distinta.</p>
+    <p>Pulsa <img src=\"boton_ayuda\"/> si quieres volver a ver esta ayuda.</p>
+    ]]>
+    </string>
+    <string name="ayuda_teclado_titulo_Java">Teclado II</string>
+    <string name="ayuda_teclado_Java">
+<![CDATA[
+    <p>A veces con pulsar una tecla eso no es suficiente, y quieres cambiar un poco la acción. Para ello tienes que pulsar otras teclas que editen la primera orden.</p>
+    <p>Si quieres que Ada ande hacia arriba, por ejemplo, después de haber pulsado <em>Andar</em> pulsa la flecha de <em>Arriba</em>, y el código cambiará automáticamente:</p>
+    <font color=\"#B40404\"><em>ada.andar( ARRIBA );</em></font>
+    <p>Es decir, una vez que has escrito un método puedes continuar añadiéndole atributos.</p>
+    <p>Ve pulsando teclas hasta tener el código perfecto.</p>
+    <p>Si se te olvida adonde tienes que ir, con <img src=\"boton_ver_mapa\"/> puedes ver de nuevo el mapa.</p>
+    ]]>
+    </string>
+    <string name="ayuda_teclado_titulo_C">Teclado</string>
+    <string name="ayuda_teclado_C">
+<![CDATA[
+    <p>Para jugar a <strong>Turing</strong> necesitas escribir código. Para ello tienes usar el teclado.</p>
+    <p>En él hay teclas con muchas de las acciones que puede hacer Ada: andar, mirar, golpear, etc. (Se irán desbloqueando mientras juegas).</p>
+    <p>También tiene teclas para escribir cosas propias de la programación, como bucles, variables o condiciones.</p>
+    <p>Si quieres que Ada de un paso hacia adelante, pulsa la tecla <em>Andar</em>, y en la pantalla se escribirá el codigo que hace que Ada ande. En este caso es:</p>
+    <font color=\"#B40404\"><em>andar( );</em></font>
+    <p>¡Pero aún no has acabado! A veces con eso no es suficiente, y quieres cambiar un poco la acción. Si quieres que Ada ande hacia arriba, por ejemplo, después de haber pulsado <em>Andar</em> pulsa la flecha de <em>Arriba</em>, y el código cambiará automáticamente:</p>
+    <font color=\"#B40404\"><em>andar( ARRIBA );</em></font>
+    <p>Es decir, una vez que has escrito un método puedes continuar añadiéndole atributos.</p>
+    <p>Ve pulsando teclas hasta tener el código perfecto.</p>
+    ]]>
+    </string>
+    <string name="ayuda_andar_titulo">Andar</string>
+    <string name="ayuda_andar">
+<![CDATA[
+    <p><strong>andar</strong> mueve a Ada una baldosa en la dirección seleccionada. Si pulsas la tecla aparecerá el código:</p>
+    <font color=\"#B40404\"><em>ada.andar( );</em></font>
+    <p>Este método acepta un atributo: la dirección en la que quieres que se mueva. Puedes pulsar una de las cuatro direcciones representadas por las flechas para elegir en qué dirección avanzar. Si pulsas la flecha hacia la derecha, por ejemplo: </p>
+    <font color=\"#B40404\"><em>ada.andar(DERECHA); </em></font>
+    <p>Este parámetro es opcional. Si no seleccionas ninguna dirección, Ada se moverá una baldosa hacia donde esté mirando.</p>
+    ]]>
+    </string>
+    <string name="ayuda_andar_titulo_C">Andar</string>
+    <string name="ayuda_andar_C">
+<![CDATA[
+    <p><strong>andar</strong> mueve a Ada una baldosa en la dirección seleccionada. Si pulsas la tecla aparecerá el código:</p>
+    <font color=\"#B40404\"><em>andar( );</em></font>
+    <p>Este método acepta un atributo: la dirección en la que quieres que se mueva. Puedes pulsar una de las cuatro direcciones representadas por las flechas para elegir en qué dirección avanzar. Si pulsas la flecha hacia la derecha, por ejemplo: </p>
+    <font color=\"#B40404\"><em>andar(DERECHA); </em></font>
+    <p>Este parámetro es opcional. Si no seleccionas ninguna dirección, Ada se moverá una baldosa hacia donde esté mirando.</p>
+    ]]>
+    </string>
+    <string name="ayuda_clases_titulo_Java">Clases y objetos</string>
+    <string name="ayuda_clases_Java">
+<![CDATA[
+    <p><strong>Java</strong> es un lenguaje de programación <strong>orientado a objetos</strong>. Esto quiere decir que su lógica está basada en objetos y sus interacciones.</p>
+    <p>Una <strong>clase</strong> es el esquema a partir del cual se crea un objeto, y contiene sus atributos y métodos.</p>
+    <p>Los atributos son variables propias de esa clase. Los atributos marcan <em>lo que es</em> el objeto. Y los métodos componen <em>lo que puede hacer</em>: andar, mirar, golpear&#8230;</p>
+    <p>A partir de una clase se pueden crear, que son los que utilizamos en el código: el objeto <em>ada</em>, el objeto <em>herrero</em> o el objeto <em>persona</em>. Todos son variaciones a partir de un mismo molde: la clase Persona.</p>
+    <p>Así es como funciona Java: se crean objetos y se utilizan sus métodos y atributos para que interactuen entre ellos.</p>
+    ]]>
+    </string>
+    <string name="ayuda_clase_persona_titulo_Java">Clase Persona</string>
+    <string name="ayuda_clase_persona_Java"><![CDATA[
+    <p>
+    public class Persona {<br><br>
+        \t//Atributos<br>
+        \tprivate String nombre;<br>
+        \tprivate int salud;<br>
+        \tprivate int fuerza;<br>
+        \tprivate int experiencia;<br><br>
+
+        \t//Constructor<br>
+        \tpublic Persona (){<br>
+        \t\t/*Código del constructor*/<br>
+        \t}<br><br>
+
+        \t//Métodos<br>
+        \tpublic void andar(){<br>
+        \t\t/*Código para dar un paso hacia adelante*/<br>
+        \t}<br><br>
+
+        \tpublic void andar(int direccion){<br>
+        \t\t/*Código para dar un paso en la direccion*/<br>
+        \t}<br><br>
+
+        \tpublic void golpear(){<br>
+        \t\t/*Código para dar un golpe hacia adelante*/<br>
+        \t}<br><br>
+
+        \tpublic void golpear(int direccion){<br>
+        \t\t/*Código para dar un golpe hacia la direccion*/<br>
+        \t}<br><br>
+
+        \tpublic int mirar(){<br>
+        \t\t/*Código para mirar hacia adelante.<br>
+        \t\tDevuelve un entero con el código de lo que haya.*/<br>
+        \t}<br><br>
+
+        \tpublic int mirar(int direccion){<br>
+        \t\t/*Código para mirar qué hay un paso en la direccion dada.*/<br>
+        \t}<br><br>
+
+        \tpublic int escuchar(){<br>
+        \t\t/*Código para escuchar alrededor. <br>Devuelve un entero que varía según el nivel.*/<br>
+        \t}<br><br>
+
+       \t\\\\[&#8230;]<br><br>
+
+    }</p>
+    ]]></string>
+    <string name="ayuda_nota_nombres_titulo">Nota I</string>
+    <string name="ayuda_nota_nombres">
+<![CDATA[
+    <p>Los nombres de clases y objetos tienen que estar compuestos por letras, números y el guión bajo, y no empezar por un número. Además, hay ciertas costumbres que es bueno seguir:</p>
+    <p>Las clases suelen escribirse con la primera letra de cada palabra en mayúscula y las demás en minúscula: <em>Persona</em>, <em>Animal</em>, <em>TelefonoMovil</em>.</p>
+    <p>Los objetos creados a partir de esa clase, si es posible, se escriben igual que la clase pero en minúscula la primera letra: <em>persona</em>, <em>animal</em>, <em>telefonoMovil</em>.</p>
+    <p>Aunque si es más intuitivo escribirlo de otra forma se debe hacer así. Por ejemplo, de la clase Animal puede ser mejor llamar a sus objetos <em>gato</em>, <em>perro</em> y <em>saltamontes</em>, en vez de <em>animal1</em> y <em>animal2</em>.</p>
+    ]]>
+    </string>
+    <string name="ayuda_metodos_titulo">Metodos I</string>
+    <string name="ayuda_metodos">
+<![CDATA[
+    <p>Los <strong>métodos</strong> son las diferentes funciones que puede realizar una clase. Tienen este formato:</p>
+    <font color=\"#B40404\"><em>tipo_devuelve nombre (tipo_atributo nombre_atributo)</em></font>
+    <p><strong>nombre</strong> es el identificador del método. </p>
+    <p>Por ejemplo:</p>
+    <p><font color=\"#B40404\"><em>void ladrar (int direccion)</em></font></p>
+    <p>Este es el método <em>ladrar</em> de la clase <em>Perro</em>. No devuelve nada (es <em>void</em>) y acepta como parámetro un número entero (un <em>int</em>).
+    <p>Los <strong>atributos</strong> son lo que le podemos pasar. <strong>tipo_atributo</strong> es el tipo de atributo que acepta: puede ser una clase (puede ser <em>Persona</em> o <em>Animal</em>) o un tipo de dato básico (un número entero, una letra, un número decimal&#8230;).</p>
+    <p>Cuando queremos usar un método, escribimos el nombre del objeto (por ejemplo perro, de la clase Perro) y el nombre del método, separado por un punto. Y después los atributos (si no le vamos a pasar ninguno, se deja un paréntesis vacío).</p>
+    <font color=\"#B40404\"><em>perro.ladrar(); </em></font>
+    ]]>
+    </string>
+    <string name="ayuda_golpear_titulo">Golpear</string>
+    <string name="ayuda_golpear">
+<![CDATA[
+    <p><strong>golpear</strong> es otro método disponible, al igual que <em>andar</em>. hace que Ada golpee lo que esté en una casilla colindante.</p>
+    <p>Puede recibir un parámetro opcional con la dirección en la que atacar.</p>
+    <p><em> <font color="#B40404">void golpear( int direccion );</color> </em> </p>
+    ]]>
+    </string>
+    <string name="ayuda_mirar_titulo">Mirar</string>
+    <string name="ayuda_mirar">
+<![CDATA[
+    <p>A la hora de completar un nivel es importante que Ada compruebe qué tiene a su alrededor. Para ello puedes usar el método <strong>mirar</strong>.</p>
+    <font color="#B40404"><em>ada.mirar( DERECHA );</em></font>
+    <p>Esta línea devolverá un número que representará lo que haya una posición a la derecha de Ada.</p>
+    <p>Esta es la definición del método:</p>
+    <p><font color=\"#B40404\"><em>int mirar (int direccion){<br>
+        \t/*Código del método*/<br>
+        }</em></font></p>
+    ]]>
+    </string>
+    <string name="ayuda_metodos_2_titulo">Metodos II</string>
+    <string name="ayuda_metodos_2">
+<![CDATA[
+    <p>Los métodos pueden realizar dos cosas: operaciones internas y/o devolver algo.</p>
+    <p>El método <em>andar</em> de Persona, por ejemplo, hace que Ada ande hacia delante. El método no le dice nada al exterior.</p>
+    <p>Otros, sin embargo, sí que devuelven algo. El método mirar, por ejemplo. Usamos <em>mirar</em> y el método nos <strong>devuelve</strong> lo que Ada esté viendo. Como se nos informa de lo que ha visto, podemos usar ese dato en el código. Si no devolviera nada, no sería útil.</p>
+    <p>¿Recuerdas cómo es la definición de un método? </p>
+    <font color=\"#B40404\"><em>tipo_devuelve nombre (tipo_atributo nombre_atributo)</em></font>
+    <p>Al principio de todo se determina qué es lo que va a devolver. Puede ser un entero, una cadena de caracteres, una clase&#8230; cualquier tipo de objeto.</p>
+    ]]>
+    </string>
+    <string name="ayuda_constantes_titulo">Constantes</string>
+    <string name="ayuda_constantes">
+<![CDATA[
+    <p>Las <strong>constantes</strong> son valores que no cambian durante la ejecución. Por ejemplo, los números que identifican las diferentes cosas que te puedes encontrar son constantes.</p>
+    <p>DERECHA, IZQUIERDA, ABAJO y ARRIBA son constantes. Son nombres con los que llamamos a números enteros (0, 1, 2 y 3) y el método al que pases este atributo sabe que, si recibe un 0, quiere decir que tiene que actuar a la derecha.</p>
+    <p>Otras constantes son: Cte.ROCA, Cte.Bestia, Cte.Yunque, etc. En realidad son números enteros, pero todos los elementos del programa entiende a qué se refieren.</p>
+    <p>El método mirar, por ejemplo, devuelve un número entero. Si los comparamos con la lista de constantes, podemos saber qué es lo que ha visto.</p>
+    <p>Si quieres ver una lista de las constantes, pulsa el botón CTE en teclado <strong>cond</strong>.</p>
+    ]]>
+    </string>
+    <string name="ayuda_azar_titulo">Azar</string>
+    <string name="ayuda_azar">
+<![CDATA[
+    <p><img src=\"aleatorio\"></p>
+    <p>¿Has visto estos simbolitos? ¿Y las cosas semi-transparentes? Eso es porque, en el mapa real, es posible que no estén ahí.</p>
+    <p>Cada mapa puede tener algún comente aleatorio, que puede aparecer en varios sitios distintos. A la hora de escribir tu código tienes que tenerlo en cuenta y actuar de forma distinta si están ahí o no.</p>
+    <p>Tienes que diseñar un código que te permita ganar en TODAS las posibilidades.</p>
+    ]]>
+    </string>
+    <string name="ayuda_if_titulo">if I</string>
+    <string name="ayuda_if">
+<![CDATA[
+    <p><strong>if</strong> es la más simple de las estructuras de control. Sirve para decidir si ejecutar o no un código, según si se cumple o no una condición:</p>
+
+    <p> <font color="#B40404"><em>if ( condicion1 ) {<br>
+        \t /*Código a ejecutar si se cumple*/
+        <br>}<br></em></font></p>
+
+    <p>Es así de simple: si se cumple la condición, se ejecuta lo que pongas entre corchetes. Si no lo hace, no.</p>
+        <p>Puedes añadir if a tu código desde el teclado de <strong>Bucle</strong>.</p>
+
+    ]]>
+    </string>
+    <string name="ayuda_if_2_titulo">if II</string>
+    <string name="ayuda_if_2">
+<![CDATA[
+    <p><strong>else if</strong> y <strong>else</strong> son los dos elemento compañeros de <em>if</em>. Usando los tres puedes considerar todas las opciones al tomar una decisión.</p>
+    <p><strong>else if</strong> va debajo de <em>if</em>, y únicamente se ejecuta si la condición de <em>if</em> es falsa.</p>
+    <p>Es decir, primero se considera el <em>if</em>. Si la condición es cierta se ejecuta el código y nada más, pero si es falsa el código del <em>if</em> no se ejecuta y se pasa a considerar el <strong>else if</strong>.</p>
+    <p>Ahora, si la condición del <strong>else if</strong> es cierta se ejecuta su código. Sino, se va al siguiente elemento del bloque.</p>
+    <p>Si al final resulta que ninguna de las condiciones ha sido cierta, se ejecuta el código del <strong>else</strong>.</p>
+    <p> <font color="#B40404"><em>if ( condicion1 ) {<br>
+        \t /*Código a ejecutar si se cumple*/
+        <br>}<br>
+        else if ( condicion2 ) {<br>
+        \t /*Código a ejecutar si se cumple condicion2 pero ninguna de las anteriores*/<br>}<br>
+        else { <br>
+        \t /*Código a ejecutar si no se cumple ninguna condición*/<br>}<br></em></font></p>
+
+    <p>Nota: <strong>else if</strong> y <strong>else</strong> no pueden estar solos; siempre tienen que ir después de un <em>if</em>. Y únicamente un <strong>else</strong> por bloque.</p>
+    ]]>
+    </string>
+    <string name="ayuda_condicion_titulo">Condiciones I</string>
+    <string name="ayuda_condicion">
+<![CDATA[
+      <p>Una condición es, básicamente, una comparación entre dos valores distintos. Por ejemplo, se pueden comparar para saber si son iguales utilizando el operador <em>==</em>:</p>
+      <p> <font color="#B40404"><em>elemento_1 == elemento_2</em></font></p>
+      <p>Si los dos elementos son iguales, la condición será cierta. Si no lo son, será falsa.</p>
+      <p>Hay muchos operadores distintos. Otro útil es el de desigualdad:</p>
+      <p> <font color="#B40404"><em>elemento_1 != elemento_2</em></font></p>
+      <p>Si se escribe <em>!=</em> la condición será cierta si los elementos <em>no</em> son iguales.</p>
+      <p>Las condiciones están en el teclado de <strong>Cond</strong>iciones.</p>
+      ]]>
+    </string>
+    <string name="ayuda_escuchar_titulo">Escuchar</string>
+    <string name="ayuda_escuchar">
+<![CDATA[
+    <p><strong>Escuchar</strong> hace que Ada preste atención y escuche a su entorno.</p>
+    <p>Esta función devuelve siempre un número entero. Qué es ese número cambia según en qué nivel te encuentres y de lo que haya en él.</p>
+    <p>Si hay un perro ladrando, por ejemplo, devuelve el número de la habitación en la que se encuentra.</p>
+    <p> <font color="#B40404"><em>ada.escuchar();</em></font></p>
+    <p>Al contrario que <em>andar</em> o <em>mirar</em>, esta función no admite parámetros.</p>
+    ]]>
+    </string>
+    <string name="ayuda_nota_2_titulo">Nota II</string>
+    <string name="ayuda_nota_2">
+<![CDATA[
+    <p>Cada vez que entres a una nueva etapa dentro de un nivel, se guarda. Si quieres puedes salir y volver a entrar directamente por donde lo dejaste.</p>
+    ]]>
+    </string>
+
+    <string name="ayuda_coger_titulo">Coger</string>
+    <string name="ayuda_coger">
+<![CDATA[
+    <p>De vez en cuanto te encontrarás objetos en el tablero de juego. Puedes usar la tecla <strong>coger</strong> y cogerlo. Lo tendrás en las manos hasta que decidas usarlo.</p>
+    <font color=\"#B40404\"><em>ada.coger( );</em></font>
+    <p>Si quieres seleccionar en qué dirección está el objeto, pulsa una de las direcciones:
+    <font color=\"#B40404\"><em>ada.coger( ARRIBA );</em></font>
+    ]]>
+    </string>
+    <string name="ayuda_usar_titulo">Usar</string>
+    <string name="ayuda_usar">
+<![CDATA[
+    <p>Una vez que has cogido un objeto quieres usarlo. Para eso está la tecla <strong>usar</strong>. Solo tienes que pulsarla y se escribirá:</p>
+    <font color=\"#B40404\"><em>ada.usar( );</em></font>
+    <p>Este método hará que uses automáticamente el objeto que hayas cogido previamente</p>
+    ]]>
+    </string>
+    <string name="ayuda_inventario_titulo">Inventario</string>
+    <string name="ayuda_inventario">
+<![CDATA[
+    <p>El <strong>inventario</strong> es el lugar donde se guardan los objetos que vayas consiguiendo.</p>
+    <p>Cuando quieras abrirlo, pulsa el ícono de la bolsa que está a la derecha</p>
+    IMAGEN
+    <p>Aparecerá una lista con todos los objetos que tienes. Pulsa uno de ellos y se abrirá un teclado especial con las cosas que puedes hacer con él.</p>
+    ]]>
+    </string>
+    <string name="ayuda_variables_titulo">Variables</string>
+    <string name="ayuda_variables"><![CDATA[
+    <p>Las variables son contenedores de información. En ellas se guardan datos para usarlos más adelante.</p>
+    <p>Para utilizar las variables hay que seguir tres pasos.</p>
+    <p>Primero hay que crearla. Para ello necesitamos dos cosas: el tipo de la variable y su nombre.</p>
+    <p>A la hora de crearla necesitas decidir qué tipo de dato quieres guardar y, por lo tanto, que tipo de variable necesitas. El tipo <em>int</em>, por ejemplo, se utiliza para guardar números enteros, positivos y negativos.</p>
+    <p>El nombre es un identificador propio. Puedes llamarla como quieras, pero intenta darle un nombre que te ayude a recordar qué es lo que contiene.</p>
+    <p>Para crear una variable pulsa <em>VAR</em> en cualquier teclado, dale a <em>Crear</em>, elige el tipo de variable y escribe un nombre para tu variable. Quedará algo así:</p>
+    <font color="#B40404"><em>int variable; </em></font>
+    <p>¡Ya has creado una variable! </p>
+    ]]>
+    </string>
+    <string name="ayuda_variables_2_titulo">Variables II</string>
+    <string name="ayuda_variables_2"><![CDATA[
+    <p>Cuando creas una variable por primera vez es un contenedor vacío; no hay nada en su interior. En el segundo paso lo que tienes que hacer es darle un valor.</p>
+    <p>Seleccionala en la lista que sale al pulsar <em>VAR</em> (ahí saldrán todas las variables que hayas creado). Aparecerá algo así:</p>
+    <p>    <font color="#B40404"><em>variable = ; </em></font></p>
+    <p>El igual indica que lo que pongas a la derecha se copiará al interior de la variable. Si queremos darle un número, por ejemplo:</p>
+    <p>    <font color="#B40404"><em>variable = 13; </em></font></p>
+    <p>¡Y ya está! Ahora puedes usar esa variable como si fuese el número 13.</p>
+    ]]>
+    </string>
+    <string name="ayuda_hablar_titulo">Hablar</string>
+    <string name="ayuda_hablar">
+<![CDATA[
+    <p><strong>hablar</strong> hace que Ada hable con quien le ha propuesto el reto. Para superar algunos niveles tienes que decir algo, y para eso se utiliza esta función hablar.</p><p>Esta función necesita un parámetro: la variable que quieres leer.</p>
+    <font color=\"#B40404\"><em>warrior.hablar( edad ); </em></font>
+    ]]>
+    </string>
+    <string name="ayuda_bucles_titulo">Bucles</string>
+    <string name="ayuda_bucles">
+<![CDATA[
+    <p>Una de las herramientas más básicas en la programación son los <strong>bucles</strong>. Sirven para repetir varias veces un mismo código, escribiéndolo una sola vez.</p>
+    <p>Cada bucle tiene una condición asignada, que se comprobará al inicio de cada iteración. Si se cumple, se ejecutará el bucle. El bucle seguirá repitiéndose una y otra vez hasta que la condición deje de cumplirse.</p>
+    <p>La condición es la clave del bucle. Hay que ponerla con cuidado, para que el bucle haga lo deseado, y hay que hacer algo dentro del bucle que, llegado el momneto, haga que la condición sea falsa. Si la condición es siempre verdadera, estaremos en un <strong>bucle infinito</strong>, y el programa estará atascado para siempre</p>
+    ]]>
+    </string>
+    <string name="ayuda_while_titulo">while</string>
+    <string name="ayuda_while">
+<![CDATA[
+    <p><em>while ( condicion ) { <br> /*Código a ejecutar en el bucle*/ <br>}<br></em></p>
+    <p>Esta es la estructura de un bucle <strong>while</strong>. </p>
+    ]]>
+    </string>
+    <string name="ayuda_do_while_titulo">do - while</string>
+    <string name="ayuda_do_while">
+<![CDATA[
+    <p><em>do { <br> /*Código a ejecutar en el bucle*/ <br>} while ( condicion ) ;<br></em></p>
+    <p><strong>do - while</strong> es otro tipo de bucle, similar a while.</p>
+    <p>La diferencia de uno con el otro es que while, antes de entrar en el bucle, comprueba la condición. Si se cumple, entra; sino, no.</p>
+    <p>do - while, sin embargo, siempre se ejecutará una vez. Y, al completar la primera ejecución, comprobará la condición para ver si se sigue ejecutando.</p>
+    ]]>
+    </string>
+    <string name="ayuda_booleano_titulo">Variables III</string>
+    <string name="ayuda_booleano"><![CDATA[
+    <p>Otro tipo de dato (y, por lo tanto, de variable) es el tipo <strong>boolean</strong>.</p>
+    <p>Este tipo solo tiene dos valores posibles: verdadero (<strong>true</strong>) y falso (<strong>false</strong>).</p>
+    <p>Se utilizan en las condiciones. Si una condición es "true", es cierta. Si se hace un bucle con esa condición, será un bucle infinito.</p>
+    <p>Son utiles cuando se utiliza una variable booleana. Se puede asignar inicialmente true y, dentro del bucle, cambiarlo a false cuando queramos salir.</p>
+    ]]></string>
+    <string name="ayuda_descansar_titulo">Descansar</string>
+    <string name="ayuda_descansar"><![CDATA[
+    <p>El método <strong>descansar</strong> hace que Ada espere un turno, en el que no se moverá y recuperará un poco de salud.</p>
+    <p>Para utilizarlo, pulsa la tecla <em>desc.</em> en el tablero de acciones.</p>
+    <p>Ten en cuenta que el movimiento de los personajes va por turnos: primero se mueve Ada, después se mueven los enemigos. Un turno es una acción: andar, golpear o descansar. Mirar y las estructuras de control no cuentan.</p>
+    ]]></string>
+    <string name="ayuda_excepciones_titulo">Excepciones</string>
+    <string name="ayuda_excepciones"><![CDATA[
+    <p>Las <strong>excepciones</strong> son errores que se producen en la ejecución del código.</p>
+    <p>Por ejemplo: dividir por cero, utilizar una variable sin inicializar, acceder a partes de memoria restringida&#8230;</p>
+    <p>Cuando ocurren estos errores, el programa lanza una excepción, muestra un mensaje de error y, por lo general, finaliza.</p>
+    ]]></string>
+    <string name="ayuda_trycatch_titulo">Try - Catch</string>
+    <string name="ayuda_trycatch"><![CDATA[
+    <p>El bloque <strong>try - catch</strong> sirve para capturar excepciones.</p>
+    <p>Si una zona de código es propensa a producir una excepción, se escribe en el interior de un bloque <strong>try</strong>.</p>
+    <p>Si la excepción se produce, en vez de terminar, el programa salta al bloque <strong>catch</strong>. En esta zona del código se hace lo que sea necesario para corregir la excepción (o nada, si no hace falta).</p>
+       <p> <font color="#B40404"><em>try {<br>
+        \t /*Zona propensa a errores*/
+        <br>}<br>
+        catch ( Exception e ) {<br>
+        \t /*Código a ejecutar si se produce una excepción.*/<br>}<br>
+      </em></font></p>
+
+    ]]></string>
+    <string name="descr_boton_norte">Ir al norte</string>
+    <string name="descr_boton_sur">Ir al sur</string>
+    <string name="descr_boton_oeste">Ir al oeste</string>
+    <string name="descr_boton_este">Ir al este</string>
+    <string name="boton_atras">Atrás</string>
+
+
+</resources>

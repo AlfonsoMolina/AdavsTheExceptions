@@ -1,0 +1,202 @@
+[
+    {
+        "fondo": "fondo_bosque",
+        "mensajes": [
+            {
+                "imagen": "ada",
+                "posicion": "izquierda",
+                "texto": "",
+                "siguiente":"true"
+            },
+            {
+                "imagen": "guerrero",
+                "posicion": "derecha",
+                "texto": ""
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¿Qué era esa cosa?"
+            },
+            {
+                "imagen": "guerrerohablar",
+                "posicion": "derecha",
+                "texto": "No sé que era. No había visto algo así nunca, pero sí sé que no era algo a lo que debas acercarte."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿Cómo puedes estar tan seguro? Si dices que no lo has visto nunca."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Simplemente lo sé, no me preguntes cómo."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿No oyes algo?"
+            },
+            {
+                "imagen": "0",
+                "posicion":"izquierda",
+                "texto": "¡Mira, allí! ¡Están atacando a alguien!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿No vas a ayudarle?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "No es mi trabajo. Además, fíjate. Está rodeado de esas cosas. "
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Hmphf."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Vale! ¡Voy yo!"
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¡Aguanta! ¡Estoy llegando!",
+                "siguiente": "true"
+            }
+        ],
+        "constantes":"6",
+        "avatar": "ada_mini",
+        "resumen": "¡Sálvale!",
+        "objetivo": "Objetivo: Derrota al goblin.",
+        "victoria": "limpiar",
+        "extra": "boole",
+        "mapa": {
+             "filas": "3",
+             "columnas": "6",
+             "baldosaBase": "baldosa_hierba",
+
+             "item": [
+                 {
+                     "posicion":"2",
+                     "tipo":"fijo",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "posicion":"8",
+                     "tipo":"fijo",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "posicion":"0",
+                     "tipo":"excepcion",
+                     "bitmap":"sprite_excepcion"
+                 },
+                 {
+                     "posicion":"17",
+                     "tipo":"excepcion",
+                     "bitmap":"sprite_excepcion"
+                 },
+                 {
+                     "posicion": "5",
+                     "tipo":"bestia",
+                     "direccion":"izquierda",
+                     "salud":"4",
+                     "fuerza":"3",
+                     "ID": "goblin",
+                     "bitmap":"sprite_goblin"
+                 },
+                 {
+                     "posicion":"4",
+                     "tipo": "NPC",
+                     "ID": "boole",
+                     "salud":"7",
+                     "bitmap":"sprite_boole"
+                 },
+                 {
+                     "posicion": "6",
+                     "direccion": "derecha",
+                     "tipo": "ada",
+                     "bitmap": "sprite_ada"
+                 }
+             ]
+         }
+    },
+    {
+        "dialogo": "true",
+        "fondo": "fondo_bosque",
+        "mensajes": [
+            {   "imagen": "ada",
+                "posicion": "izquierda",
+                "texto": "",
+                "siguiente": "true"
+            },
+            {
+                "imagen": "boolehablar",
+                "posicion": "derecha",
+                "texto": "Gracias. De verdad. Creí que moriría ahí."
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "No hay de qué. ¿Qué haces sólo en el bosque?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Estoy en una misión. ¿Qué haces tú sola?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "No estoy sola. Estoy con..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Se han ido!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Ah! ¡Cómo me hacen esto!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿En una misión, dices?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Sip. Para salvar el mundo."
+            }
+        ],
+
+        "experiencia":"5"
+    }
+]

@@ -1,0 +1,361 @@
+[
+    {
+        "fondo": "fondo_bosque",
+        "mensajes": [
+            {
+                "imagen": "guerrero",
+                "posicion": "derecha",
+                "texto": ""
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "Hola. Soy Ada."
+            },
+            {
+                "imagen": "guerrerohablar",
+                "posicion": "derecha",
+                "texto": "Ruby. ¿De dónde has salido? No sabía que el mercader tuviera una hija."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Soy la ayudante del herrero. Tengo que ir a la ciudad por un metal. ¿Por qué nos hemos parado?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Hay algunas rocas bloqueando el camino. Por el terremoto, supongo. Hasta que no las rompa no podemos seguir."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Ya veo... ¿necesitas ayuda?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "No te preocupes, estoy acostumbrado a hacerlo."
+            },
+            {
+                "imagen": "0",
+                "posicion":"izquierda",
+                "texto": "¿Viajas mucho con el mercader?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Bastante. Le gusta tener algo de seguridad cuando viaja."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿Es difícil?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Nah. Las bestias son muy tontas. Sólo hay que tener cuidado y usar la cabeza."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Por ejemplo, imagina que un goblin se acerca a ti y únicamente tienes una espada, ¿qué haces?."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Pues... iría a por él, supongo."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Mal. Así lo único que harías sería exponerte. El truco está en dejar que él se acerque."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Espera a que de un paso y comprueba si está al alcance de tu espada. ¿Puedes darle? Pues dale. ¿No? Espera a que se acerque."
+            },
+            {
+                "imagen": "0",
+                "posicion":"izquierda",
+                "texto":"Así, cuando de un paso yo puedo aprovechar y darle el primer golpe..."
+            },
+            {
+                "imagen": "0",
+                "posicion":"derecha",
+                "texto":"Exacto."
+            },
+            {
+                "imagen": "0",
+                "posicion":"derecha",
+                "texto":"Mira, se acerca un goblin. ¿Quieres intentarlo?"
+            },
+            {
+                "imagen": "0",
+                "posicion":"izquierda",
+                "texto":"¡Vamos allá!"
+            }
+
+        ],
+
+        "teclas": [
+            {
+                "teclado": "1",
+                "teclas": ["18"]
+            },
+            {
+                "teclado": "2",
+                "teclas": ["8"]
+            },
+            {
+                "teclado": "3",
+                "teclas": ["16", "17"]
+            }
+        ],
+
+        "constantes":"5",
+        "variables":"2",
+
+        "avatar": "guerrero_mini",
+        "resumen": "Un goblin se acerca. Defiende la caravana y derrótalo.",
+        "objetivo": "Objetivo: Derrota al goblin.",
+        "secundario": "Usa el bucle while.",
+        "lineas": [ ["504" , "305"], ["1"], ["1"], ["599","554"] ],
+        "posicion_inicial":"1",
+        "obligatorio": [ ["504"] ],
+        "victoria": "limpiar",
+        "mapa": {
+             "filas": "3",
+             "columnas": "5",
+             "baldosaBase": "baldosa_hierba",
+
+             "item": [
+                 {
+                     "posicion":"1",
+                     "tipo":"fijo",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "aleatorio": "true",
+                     "posicion": ["7","8","9"],
+                     "tipo":"bestia",
+                     "direccion":"izquierda",
+                     "salud":"9",
+                     "fuerza":"3",
+                     "ID": "goblin",
+                     "bitmap":"sprite_goblin"
+                 },
+                 {
+                     "posicion": "5",
+                     "direccion": "derecha",
+                     "tipo": "ada",
+                     "bitmap": "sprite_ada"
+                 }
+             ]
+         },
+
+        "ayuda": [ "bucles", "while", "booleano", "descansar" ]
+    },
+    {
+        "fondo": "fondo_bosque",
+        "mensajes": [
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¡Gané!"
+            },
+            {
+                "imagen": "guerrerohablar",
+                "posicion": "derecha",
+                "texto": "¿Ves como era fácil?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¡Sí!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "¿Te has fijado en cómo se movía? Las bestias siempre se mueven a la vez que tú."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Pero mirar a tu alrededor y usar estructuras de control no cuenta como un movimiento. ¡Úsalo en tu ventaja!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Mmm... No me había dado cuenta. Es interesante."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Pero no me sentí cómoda usando ese bucle infinito. Una vez dentro no puedo salir."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "*Ríe*"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "A mí me llevo mucho más tiempo que a ti darme cuenta de eso. Sí, los bucles infinitos son peligrosos."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "En un combate no importa, porque cuando acabas sales automáticamente. Pero si después quieres hacer otra cosa no sirven."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "En esos casos lo que tienes que hacer es pensar una condición que se cumpla sólo mientras se esté ejecutando el bucle."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Así, cuando la condición ya no sea cierta el bucle no se seguirá ejecutando."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Entiendo... Quiero probarlo."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "*Ríe*"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Venga, ayúdame a despejar el camino."
+            },
+            {
+                "imagen": "0",
+                "posicion":"derecha",
+                "texto":"Estas rocas son bastante duras. Te va a hacer falta más de un golpe para romperlas"
+            }
+        ],
+
+        "teclas": [
+            {
+                "teclado": "2",
+                "teclas": ["9"]
+            }
+        ],
+
+        "avatar": "guerrero_mini",
+        "resumen": "¡Hay rocas bloqueando el camino!",
+        "objetivo": "Objetivo: Rompe las rocas y ve hacia la meta.",
+        "secundario": "Usa el bucle do-while.",
+        "lineas": [ ["0"], ["505"], ["1"], ["1"], ["599","555","504"] ],
+        "posicion_inicial":"0",
+        "obligatorio": [ ["505"] ],
+        "victoria": "meta y limpiar",
+        "mapa": {
+             "filas": "3",
+             "columnas": "5",
+             "baldosaBase": "baldosa_hierba",
+
+             "item": [
+                 {
+                     "aleatorio":"true",
+                     "posicion":["-10","-10","7","12"],
+                     "tipo":"diana",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo",
+                     "salud":"6"
+                 },
+                 {
+                     "aleatorio":"true",
+                     "posicion":["-10","-10","7","12"],
+                     "tipo":"diana",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo",
+                     "salud":"15"
+                 },
+                 {
+                     "aleatorio":"true",
+                     "posicion":["-10","-10","7","12"],
+                     "tipo":"diana",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo",
+                     "salud":"15"
+                 },
+                 {
+                     "aleatorio":"true",
+                     "posicion":["-10","-10","7","12"],
+                     "tipo":"diana",
+                     "ID":"roca",
+                     "bitmap":"sprite_roca",
+                     "direccion":"abajo",
+                     "salud":"30"
+                 },
+                 {
+                     "posicion":"14",
+                     "tipo":"excepcion",
+                     "bitmap":"sprite_excepcion"
+                 },
+                 {
+                     "posicion":"9",
+                     "tipo":"meta",
+                     "bitmap":"sprite_meta"
+                 },
+                 {
+                     "posicion": "5",
+                     "direccion": "derecha",
+                     "tipo": "ada",
+                     "bitmap": "sprite_ada"
+                 }
+             ]
+         },
+
+        "ayuda": [ "do_while"]
+    },
+{
+        "dialogo": "true",
+        "fondo": "fondo_bosque",
+        "mensajes": [
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¿Has visto esa cosa?"
+            },
+            {
+                "imagen": "guerrerohablar",
+                "posicion": "derecha",
+                "texto": "Sí."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿Qué era? No lo había visto nunca."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Yo tampoco."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Vámonos de aquí.",
+                "siguiente":"true"
+            }
+        ],
+
+        "experiencia":"10"
+    }
+
+]

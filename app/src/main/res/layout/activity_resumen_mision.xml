@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.alfonsomolina.tfg.ResumenMisionActivity"
+    android:background="#FFFFFF"   >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/avatar"
+        android:contentDescription="@string/descr_avatar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/avatar"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_alignBottom="@id/avatar"
+        android:id="@+id/descripcion"
+        android:text="@string/descr_descripcion"
+        android:gravity="center_vertical|fill_horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/retoPrimario"
+        android:text="@string/descr_retoPrimario"
+        android:gravity="fill_horizontal|center_vertical"
+        android:layout_below="@+id/avatar"
+        android:layout_alignRight="@+id/descripcion"
+        android:layout_alignEnd="@+id/descripcion"
+        android:layout_toEndOf="@+id/punto_principal"
+        android:layout_toRightOf="@+id/punto_principal"
+        android:paddingLeft="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/retoSecundario"
+        android:text="@string/descr_retoSecundario"
+        android:gravity="center_vertical|fill_horizontal"
+        android:layout_below="@+id/retoPrimario"
+        android:layout_alignLeft="@+id/retoPrimario"
+        android:layout_alignStart="@+id/retoPrimario"
+        android:layout_alignRight="@+id/retoPrimario"
+        android:layout_alignEnd="@+id/retoPrimario"
+        android:paddingLeft="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_mision"
+        android:id="@+id/boton_mision"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="irNivel"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/punto_principal"
+        android:contentDescription="@string/descr_retoPrimario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/avatar"
+        android:layout_above="@+id/retoSecundario"
+        android:src="@drawable/boton_objetivo_primario" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/punto_secundario"
+        android:contentDescription="@string/descr_retoSecundario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/punto_principal"
+        android:layout_alignEnd="@+id/punto_principal"
+        android:layout_below="@+id/punto_principal"
+        android:layout_alignBottom="@+id/retoSecundario"
+        android:src="@drawable/boton_objetivo_secundario" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablero"
+        android:layout_below="@+id/retoSecundario"
+        android:background="@drawable/marco_tablero"
+        android:layout_above="@id/boton_mision"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

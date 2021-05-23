@@ -1,0 +1,39 @@
+{
+    "ciudad_oeste": "pueblo_inicio",
+    "exp_oeste": "0",
+
+    "nombre": "Camino en el bosque",
+
+    "miniatura": "bosque",
+
+    "niveles": [
+       {
+            "nombre": "Asalta caminos",
+            "id": "combate1",
+            "experiencia": "30",
+            "descripcion": "¡Hay bestias en el bosque! Derrótalas usando bucles.",
+            "lenguajes": ["Java","C"]
+       },
+       {
+            "nombre": "Asalta caminos II",
+            "id": "combate2",
+            "experiencia": "40",
+            "descripcion": "¡Alguien necesita ayuda!",
+            "lenguajes": ["Java"]
+       },
+       {
+            "nombre": "La historia de Boole",
+            "id": "flashback",
+            "experiencia":"45",
+            "descripcion": "Boole cuenta la historia de su misión.",
+            "lenguajes": ["Java"]
+       },
+       {
+            "nombre": "La torre",
+            "id": "torre",
+            "experiencia": "50",
+            "descripcion": "Ada y Boole llegan a la torre. \n Descubre Try - Catch",
+            "lenguajes": ["Java"]
+       }
+    ]
+}

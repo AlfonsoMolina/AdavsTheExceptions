@@ -1,0 +1,450 @@
+[
+    {
+        "dialogo": "true",
+        "fondo": "fondo_herreria",
+        "mensajes": [
+            {
+                "imagen": "herrero",
+                "posicion": "derecha",
+                "texto": "*PLOF*"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "*PLOF*"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Ya casi está. Ada, mira cómo..."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "¡Ada!"
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "¡Sí, sí, aquí estoy!"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Te pasas todo el día mirando por la ventana."
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Me aburro. No hay nada que hacer aquí.",
+                "comentario":"poner un susipiro antes o algo, en un true"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Ya he limpiado y no hay ningún cliente."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Vale. Ven a la forja. Me vas a ayudar a terminar la espada"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "¿De verdad?",
+                "comentario":"sorpresa"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Sí, creo que ya va siendo hora.",
+                "siguiente": "true"
+            }
+        ]
+    },
+    {
+        "teclas": [
+            {
+                "teclado": "1",
+                "teclas": ["17"]
+            }
+        ],
+        "fondo": "fondo_herreria",
+        "mensajes": [
+            {
+                "imagen": "herrero",
+                "posicion": "derecha",
+                "texto": "Esta espada ya está casi lista. Sólo le hace falta un golpe más.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Aún no conoces el método golpear, ¿verdad?",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "Nop.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Este es el método que tienes que usar para forjar la espada. Tienes que acercarte a ella y darle un golpe bien fuerte.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "¿Recuerdas cómo era la clase Espada?",
+                "siguiente": "false"
+            },
+            {
+                "imagen":"0",
+                "posicion":"izquierda",
+                "texto": "Sí."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Vamos a crear el objeto. Presta atención...",
+                "siguiente": "true"
+            }
+        ],
+
+        "avatar": "herrero_mini",
+        "resumen": "Vamos a construir un objeto espada.",
+        "objetivo": "Objetivo: Golpea el hierro.",
+        "secundario": "Usa golpear.",
+        "obligatorio": [ ["404"] ],
+        "victoria": "limpiar",
+        "mapa": {
+             "filas": "5",
+             "columnas": "5",
+             "baldosaBase": "baldosa_ladrillo",
+
+             "item": [
+                 {
+                     "posicion":"2",
+                     "tipo":"fijo",
+                     "bitmap":"sprite_espadas"
+                 },
+                 {
+                     "posicion":"7",
+                     "tipo":"NPC",
+                     "ID":"herrero",
+                     "bitmap":"sprite_herrero",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "posicion":"21",
+                     "tipo":"fijo",
+                     "bitmap":"sprite_fragua"
+                 },
+                 {
+                     "posicion": "13",
+                     "direccion": "abajo",
+                     "tipo": "diana",
+                     "salud": "1",
+                     "ID":"yunque",
+                     "bitmap":"sprite_yunque"
+                 },
+                 {
+                     "posicion": "13",
+                     "direccion": "abajo",
+                     "tipo": "roca",
+                     "salud": "100",
+                     "ID": "yunque",
+                     "bitmap": "sprite_yunque"
+                 },
+                 {
+                     "posicion": "10",
+                     "direccion": "derecha",
+                     "tipo": "ada",
+                     "bitmap": "sprite_ada"
+                 }
+             ]
+         },
+
+        "ayuda": [ "metodos" ]
+    },
+    {
+        "teclas": [
+            {
+                "teclado": "1",
+                "teclas": [ "13" ]
+            }
+        ],
+        "fondo": "fondo_herreria",
+        "mensajes": [
+            {
+                "imagen": "herrero",
+                "posicion": "derecha",
+                "texto": "Buen trabajo.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "¿Puedes ver qué atributos tiene?",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "Mmm...",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Diez de fuerza y quince de resistencia, creo.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "No está mal. ¿Qué nombre le ponemos?",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Mmm... ¿espada?",
+                "siguiente": "false",
+                "comentario":"Tengo que cambiar lo de arriba a true y hacer que la siguiente sea el herrero riéndose"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Claro. Todo un clásico",
+                "siguiente": "false",
+                "comentario": "Hacer que se sorprendan"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "*Tiembla*",
+                "siguiente": "true"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "*Tiembla*",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "¡Un terremoto! ¡Cuidado!",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Me he hecho daño en el brazo. ¿Estás bien?"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Creo que sí... pero estoy atrapada. No puedo moverme. Hay escombros por todos lados."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Mira si puedes romper alguno y abrirte paso.",
+                "siguiente":"true"
+            }
+        ],
+
+        "avatar": "herrero_mini",
+        "resumen": "¡Ada está atrapada! Busca un camino para salir.",
+        "objetivo": "Objetivo: Mira las cuatro rocas y descubre cual puede romperse.",
+        "secundario": "",
+        "victoria": "usar",
+
+        "lineas": [ ["403" , "304"], ["403"], ["0"] ],
+        "posicion_inicial": "1",
+
+        "obligatorio": [ ["403" , "301"], ["403" , "302"], ["403" , "303"], ["403" , "304"]],
+
+        "mapa": {
+             "filas": "5",
+             "columnas": "5",
+             "baldosaBase": "baldosa_ladrillo",
+
+             "item": [
+                 {
+                     "posicion":"7",
+                     "tipo":"NPC",
+                     "ID":"herrero",
+                     "bitmap":"sprite_herrero",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "posicion":"21",
+                     "tipo":"fijo",
+                     "bitmap":"sprite_fragua"
+                 },
+                 {
+                     "posicion": "13",
+                     "tipo": "fijo",
+                     "bitmap": "sprite_yunque"
+                 },
+                 {
+                     "posicion": "6",
+                     "tipo": "fijo",
+                     "ID":"escombros",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "10",
+                     "tipo": "fijo",
+                     "ID":"escombros",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "12",
+                     "tipo": "fijo",
+                     "ID":"escombros",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "16",
+                     "tipo": "diana",
+                     "ID":"escombros",
+                     "salud":"1",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "11",
+                     "direccion": "arriba",
+                     "tipo": "ada",
+                     "bitmap": "sprite_ada"
+                 }
+             ]
+         },
+
+
+        "ayuda": [ "mirar" ]
+
+    },
+    {
+        "fondo": "fondo_herreria",
+        "mensajes": [
+            {
+                "imagen": "herrero",
+                "posicion": "derecha",
+                "texto": "¿Ves alguna salida?",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "adahablar",
+                "posicion": "izquierda",
+                "texto": "Creo que sí... la roca de abajo parece que puede romperse.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Vale, tranquila. Usa el método golpear y vámonos afuera.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Ten cuidado. Si le das a una roca irrompible o fallas y no hay nada delante puedes hacerte daño.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "*Coge aire*",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "izquierda",
+                "texto": "Voy a intentarlo...",
+                "siguiente": "true"
+            }
+        ],
+
+        "avatar": "herrero_mini",
+        "resumen": "¡Ada está atrapada! Busca un camino para salir.",
+        "objetivo": "Rompe una roca y ve hacia la meta.",
+        "secundario": "",
+        "victoria": "meta",
+
+        "mapa": {
+             "filas": "5",
+             "columnas": "5",
+             "baldosaBase": "baldosa_ladrillo",
+
+             "item": [
+                 {
+                     "posicion":"7",
+                     "tipo":"NPC",
+                     "ID":"herrero",
+                     "bitmap":"sprite_herrero",
+                     "direccion":"abajo"
+                 },
+                 {
+                     "posicion":"21",
+                     "tipo":"fijo",
+                     "bitmap":"sprite_fragua"
+                 },
+                 {
+                     "posicion": "13",
+                     "tipo": "fijo",
+                     "bitmap": "sprite_yunque"
+                 },
+                 {
+                     "posicion": "6",
+                     "tipo": "fijo",
+                     "ID":"escombros",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "10",
+                     "tipo": "fijo",
+                     "ID":"escombros",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "12",
+                     "tipo": "fijo",
+                     "ID":"escombros",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "16",
+                     "tipo": "diana",
+                     "ID":"escombros",
+                     "salud": "1",
+                     "bitmap":"sprite_roca"
+                 },
+                 {
+                     "posicion": "11",
+                     "direccion": "arriba",
+                     "tipo": "ada",
+                     "bitmap": "sprite_ada"
+                 },
+                 {
+                    "posicion": "19",
+                    "tipo": "meta",
+                    "bitmap": "sprite_meta"
+                 }
+             ]
+         },
+
+        "ayuda": ["metodos_2"],
+        "ayuda_extra": [ "constantes" ],
+        "experiencia":"10"
+
+    }
+
+]

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alfonsomolina.tfg.IntroduccionActivity"
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:id="@+id/imagen_fondo"
+        android:contentDescription="@string/descr_fondo"
+        android:src="@drawable/fondo_torre"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_alignTop="@id/imagen_fondo"
+        android:layout_alignBottom="@id/imagen_fondo">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/persIzq"
+            android:src="@drawable/imagen_base"
+            android:contentDescription="@string/descr_persIzq"
+            android:adjustViewBounds="true" />
+
+        <!-- View vacía para que la siguiente imagen se coloque a la derecha-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/persDcha"
+            android:src="@drawable/imagen_base"
+            android:contentDescription="@string/descr_persDcha"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/dialogo"
+        android:layout_below="@id/imagen_fondo"
+        android:layout_above="@+id/botones"
+        android:divider="@null"
+        android:padding="@dimen/activity_horizontal_margin">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="end"
+        android:id="@+id/botones">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/boton_siguiente"
+            android:id="@+id/boton_siguiente"
+            android:visibility="gone"
+            android:onClick="irNivel"
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_saltar"
+            android:id="@+id/boton_saltar"
+            android:onClick="irNivel"
+            android:padding="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/botones"
+        android:id="@+id/clicks"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

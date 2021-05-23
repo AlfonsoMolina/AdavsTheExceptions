@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="8%p"
+    >
+
+    <Row android:keyWidth="25%p">
+        <Key android:codes="-3"   android:keyIcon="@drawable/tecla_ocultar" android:keyEdgeFlags="left" />
+        <Key android:codes="-10"    android:keyLabel="ACCION" />
+        <Key android:codes="-11"    android:keyLabel="BUCLE" />
+        <Key android:codes="-12"    android:keyLabel="COND" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="10%p">
+        <Key android:codes="0"    android:keyLabel="0" android:keyEdgeFlags="left"/>
+        <Key android:codes="1"    android:keyLabel="1" />
+        <Key android:codes="2"    android:keyLabel="2" />
+        <Key android:codes="3"    android:keyLabel="3" />
+        <Key android:codes="4"    android:keyLabel="4" />
+        <Key android:codes="300"  android:keyLabel="CTE" android:keyWidth="30%p"/>
+        <Key android:codes="998" android:keyLabel="VAR" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:keyWidth="10%p">
+        <Key android:codes="5"    android:keyLabel="5" android:keyEdgeFlags="left"/>
+        <Key android:codes="6"    android:keyLabel="6" />
+        <Key android:codes="7"    android:keyLabel="7" />
+        <Key android:codes="8"    android:keyLabel="8" />
+        <Key android:codes="9"    android:keyLabel="9" />
+        <Key android:codes="305"  android:keyLabel="true" android:keyWidth="15%p"/>
+        <Key android:codes="306"  android:keyLabel="false" android:keyWidth="15%p"/>
+        <Key android:codes="-5"   android:keyIcon="@drawable/tecla_borrar" android:isRepeatable="true" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:keyWidth="16%p">
+        <Key android:codes="601" android:keyLabel="==" android:keyEdgeFlags="left"/>
+        <Key android:codes="602" android:keyLabel="!="/>
+        <Key android:codes="603" android:keyLabel="&lt;"/>
+        <Key android:codes="604" android:keyLabel="&gt;"/>
+        <Key android:codes="0" android:keyLabel="("/>
+        <Key android:codes="-1" android:keyIcon="@drawable/tecla_enter" android:isRepeatable="true" android:keyWidth="20%p" android:keyHeight="16%p" android:keyEdgeFlags="right"/>
+
+    </Row>
+
+    <Row android:keyWidth="16%p">
+        <Key android:codes="607" android:keyLabel="&amp;&amp;" android:keyEdgeFlags="left"/>
+        <Key android:codes="608" android:keyLabel="||"/>
+        <Key android:codes="605" android:keyLabel="&lt;="/>
+        <Key android:codes="606" android:keyLabel="&gt;="/>
+        <Key android:codes="0" android:keyLabel=")"/>
+    </Row>
+
+</Keyboard>

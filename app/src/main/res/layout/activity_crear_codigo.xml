@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alfonsomolina.tfg.CrearCodigoActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_enviar"
+            android:id="@+id/boton_enviar"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:onClick="resolver" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mas"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="60dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:onClick="mostrarCabecera"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cabecera"
+            android:text="@string/cabecera_Java"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/lista_codigo"
+            android:padding="4dp"
+            android:focusableInTouchMode="false"
+            android:paddingEnd="30dp"
+            android:paddingRight="30dp"
+         />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pie"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:text="@string/pie_Java"/>
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/teclado"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="invisible"
+            android:keyBackground="@drawable/btn_keyboard_key_ics"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/boton_ayuda"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/boton_ayuda"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="mostrarAyuda" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/boton_ver_mapa"
+        android:background="@drawable/boton_ver_mapa"
+        android:layout_below="@+id/boton_ayuda"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:onClick="mostrarResumen"/>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/mensaje_ayuda"
+            android:id="@+id/mensajeAyuda"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/fondo_ayudas"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:scrollbars = "vertical"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:paddingRight="40dp"
+            android:paddingEnd="40dp"
+            android:paddingLeft="25dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/boton_x"
+            android:onClick="cerrar"
+            android:layout_alignTop="@+id/mensajeAyuda"
+            android:layout_alignRight="@+id/mensajeAyuda"
+            android:layout_alignEnd="@+id/mensajeAyuda"
+            android:layout_margin="5dp"
+            android:background="@drawable/boton_x"
+           />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/boton_derecha"
+            android:layout_alignBottom="@+id/mensajeAyuda"
+            android:layout_alignRight="@+id/mensajeAyuda"
+            android:layout_alignEnd="@+id/mensajeAyuda"
+            android:onClick="pasarDerecha"
+            android:background="@drawable/boton_pasar_derecha"
+            android:layout_margin="5dp"
+          />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:id="@+id/boton_izquierda"
+            android:onClick="pasarIzquierda"
+            android:background="@drawable/boton_pasar_izquierda"
+            android:layout_alignBottom="@+id/mensajeAyuda"
+            android:layout_alignLeft="@+id/mensajeAyuda"
+            android:layout_alignStart="@+id/mensajeAyuda"
+            android:layout_margin="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:id="@+id/titulo"
+        android:layout_toLeftOf="@+id/boton_x"
+        android:layout_toStartOf="@+id/boton_x"
+        android:layout_alignTop="@+id/mensajeAyuda"
+        android:layout_alignLeft="@+id/mensajeAyuda"
+        android:layout_alignStart="@+id/mensajeAyuda"
+        android:layout_alignBottom="@+id/boton_x"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <ListView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/popup"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:theme="@style/Base.TextAppearance.AppCompat.Inverse"/>
+
+
+</RelativeLayout>

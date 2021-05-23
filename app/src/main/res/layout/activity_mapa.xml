@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.alfonsomolina.tfg.MapaActivity"
+    android:background="#FFFFFF"
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/irNorte"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/flecha_arriba"
+        android:onClick="irCiudad"
+        android:contentDescription="@string/descr_boton_norte"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_ciudad"
+        android:layout_below="@id/irNorte"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ciudad_miniatura"
+        android:layout_below="@+id/irNorte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/miniatura_pueblo_inicio"
+        android:contentDescription="@string/descr_miniatura"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/irSur"
+        android:src="@drawable/flecha_abajo"
+        android:onClick="irCiudad"
+        android:layout_alignLeft="@+id/irNorte"
+        android:layout_alignStart="@+id/irNorte"
+        android:layout_below="@+id/ciudad_miniatura"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/descr_boton_sur"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/irOeste"
+        android:layout_alignBottom="@+id/ciudad_miniatura"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/flecha_izquierda"
+        android:onClick="irCiudad"
+        android:contentDescription="@string/descr_boton_oeste"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/irEste"
+        android:layout_alignBottom="@+id/ciudad_miniatura"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/flecha_derecha"
+        android:onClick="irCiudad"
+        android:contentDescription="@string/descr_boton_este"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:divider="@null"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista_niveles"
+        android:layout_below="@+id/irSur"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/irSur"
+        android:layout_toStartOf="@+id/irSur"
+        android:layout_above="@+id/botones"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_nivel"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/lista_niveles"
+        android:layout_toEndOf="@+id/lista_niveles"
+        android:layout_alignTop="@+id/lista_niveles"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/botones"
+        android:gravity="bottom|center_horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/info_inicial"
+            android:id="@+id/info_texto"
+            android:gravity="top|center_horizontal"
+            android:scrollbars = "vertical"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_ir_mision"
+            android:id="@+id/boton_inicio"
+            android:onClick="irNivel"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_ir_ultimo"
+            android:id="@+id/boton_etapa"
+            android:onClick="irNivel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/opciones"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/lista_niveles"
+        android:layout_toEndOf="@+id/lista_niveles"
+        android:layout_alignTop="@+id/lista_niveles"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/botones"
+        android:gravity="top|center_horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_reinicio"
+            android:id="@+id/boton_reinicio"
+            android:onClick="reiniciar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_lenguajes"
+            android:id="@+id/boton_spinner"
+            android:onClick="mostrarSpinner"/>
+
+        <Spinner
+            android:id="@+id/spinner_lenguaje"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:entries="@array/lenguajes"
+            android:prompt="@string/boton_lenguajes"
+            style="?android:attr/buttonStyleSmall"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botones"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/flecha"
+        android:id="@+id/flecha"
+        android:rotation="180"
+        android:visibility="gone"
+        android:contentDescription="@string/descr_flecha"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/botones"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/boton_apuntes"
+            android:src="@drawable/boton_apuntes"
+            android:background="@null"
+            android:onClick="irApuntes"
+            android:contentDescription="@string/descr_apuntes"/>
+
+        <!-- View en blanco para hacer un espacio entre ellos-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/boton_ajustes"
+            android:src="@drawable/boton_opciones"
+            android:background="@null"
+            android:contentDescription="@string/descr_opciones"
+            android:onClick="mostrarOpciones"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

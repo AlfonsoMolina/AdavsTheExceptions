@@ -1,0 +1,145 @@
+[
+    {
+        "teclas": [
+            {
+                "teclado": "1",
+                "teclas": ["6"]
+            },
+            {
+                "teclado":"2",
+                "teclas":["7"]
+            },
+            {
+                "teclado":"3",
+                "teclas":["10"]
+            }
+        ],
+
+        "variables":"1",
+
+        "fondo": "fondo_torre",
+        "mensajes": [
+            {
+                "imagen": "monjehablar",
+                "posicion": "derecha",
+                "texto": "¡Hola otra vez!",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Hasta ahora cuando has obtenido algún dato (como al mirar) lo has usado inmediatamente.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Eso no te va a servir siempre. A veces querrás que guardarlos para usarlos más adelante.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Ahí es cuando entran en juego las variables.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Una variable es, en pocas palabras, un contenedor donde guardar información.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Hay muchos tipos de variables, según lo que quieras guardar. Una variable int sirve para guardar un número entero, por ejemplo.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Vamos a hacer un nivel en que tengas que utilizarlas."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Ahora vas a entrar a un nivel con tres metas, pero sólo una es la correcta."
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Te diré a cuál debes ir al principio. Debes recordarlo, porque no lo repetiré.",
+                "siguiente": "true"
+            }
+        ],
+        "avatar": "monje_mini",
+        "resumen": "De estas tres metas sólo una es la buena. Llega a ella sin equivocarte.",
+        "objetivo": "Objetivo: Llega a la meta correcta sin pisar las demás.",
+        "secundario": "Utiliza las variables.",
+        "victoria": "meta",
+        "lineas": [ ["1000" , "998", "num_meta"], ["999", "num_meta", "408"], ["0"] ],
+        "obligatorio": [ ["1000" , "998", "num_meta"], ["999", "num_meta", "408"] ],
+        "posicion_inicial": "2",
+        "mapa": {
+            "filas": "2",
+            "columnas": "4",
+            "baldosaBase": "baldosa_hierba",
+            "item": [
+                {
+                    "posicion": "4",
+                    "direccion": "derecha",
+                    "tipo": "ada",
+                    "bitmap": "sprite_ada"
+                },
+                {
+                    "aleatorio": "true",
+                    "posicion": ["1","2","3"],
+                    "tipo": "meta",
+                    "ID": "meta",
+                    "bitmap": "sprite_meta"
+                },
+                {
+                    "aleatorio": "true",
+                    "posicion": ["1","2","3"],
+                    "tipo": "cocodrilo",
+                    "bitmap": "sprite_meta"
+                },
+                {
+                    "aleatorio": "true",
+                    "posicion": ["1","2","3"],
+                    "tipo": "cocodrilo",
+                    "bitmap": "sprite_meta"
+                }
+            ]
+        },
+        "extra": "variables",
+        "ayuda": [ "variables", "variables_2" ]
+
+    },
+    {
+        "dialogo": "true",
+        "fondo": "fondo_torre",
+        "mensajes": [
+            {
+                "imagen": "monjehablar",
+                "posicion": "derecha",
+                "texto": "¡Listo!",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Ya dominas una herramienta fundamental en la programación. Sal ahí afuera a usarla.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "He oído que Ada va a iniciar un viaje...",
+                "siguiente": "true"
+            }
+        ],
+        "experiencia": "5"
+
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "dialogo": "true",
+        "fondo": "fondo_torre",
+        "mensajes": [
+            {
+                "imagen": "monjehablar",
+                "posicion": "derecha",
+                "texto": "En programación, un programa puede escribirse usando muchos lenguajes distintos.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Este mundo está escrito con el lenguaje de programación Java. Si quieres ganar el juego tienes que aprender cómo funciona.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Java es un lenguaje orientado a objetos. Esto quiere decir que está basado en objetos y en sus interacciones.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "El elemento básico de un lenguaje de este tipo son las clases.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Las clases son los esquemas a partir de los cuáles se crean los objetos.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Las clases tienen atributos y métodos... Déjame ponerte un ejemplo.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "En este videojuego existe la clase Persona (el objeto ada, que ya has usado, es una instancia de ella).",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "La clase Persona tiene algunos atributos: salud, fuerza, experiencia... Suelen cambiar para cada objeto e indican cómo es.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "También tiene métodos, que son las acciones que puede realizar: andar, golpear, mirar...",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Si estás programando en Java y quieres crear un objeto de la clase Persona, tienes que instanciarlo.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Para ello se usa el operador new, que crea un objeto de la clase que le digas.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Ya has usado un objeto llamado ada. Antes de cada nivel se crea, usando el constructor: ada = new Persona().",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "ada tiene unos atributos propios (la experiencia y la fuerza no es igual para cada persona) y puede usar todos los métodos de la clase Persona (ya has comprobado que puede andar).",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Si queremos usar una espada, por ejemplo, tendremos que crear la clase Espada, que tendría los atributos filo, fuerza y precio, y los métodos golpear, afilar...",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Java funciona así. Primero se crean clases, cada con unos atributos y métodos diferentes, y después se crean objetos a partir de ellas y se utilizan.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Se va a añadir a tu libro de apuntes una página sobre Clases y Objetos. Échale un vistazo antes de seguir jugando.",
+                "siguiente": "false"
+            },
+            {
+                "imagen": "0",
+                "posicion": "derecha",
+                "texto": "Hasta otra :)",
+                "siguiente": "true"
+            }
+        ],
+        "experiencia":"5",
+        "ayuda_extra": ["clases", "clase_persona", "nota_nombres"]
+    }
+]
